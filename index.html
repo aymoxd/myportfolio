@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/img/man-technologist.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        },
+      }
+    }
+  }
+  </script>
+  <title>Aymane</title>
+  </head>
+  <body class="font-poppins overflow-x-hidden" >
+    
+     <header class="relative">
+      <nav class="navbar transition-all duration-500 flex fixed h-20 top-0 w-full items-center justify-between px-7 md:px-12 lg:px-24">
+          <div class="font-semibold text-xl md:text-2xl">mo<span class="text-blue-500 text-3xl">.</span></div>
+          <ul class="bg-white/20 transition-all duration-500  navUl text-gray-900 border border-gray-400 backdrop-blur-lg  hidden md:flex w-[500px] px-10 py-3 rounded-full items-center justify-between">
+            <li><a  href="#">Home</a></li>
+            <li><a  href="#">About me</a></li>
+            <li><a  href="#">My Work</a></li>
+            <li><a  href="#">Contact me</a></li>
+          </ul>
+          <i class="ri-moon-fill hidden md:block text-3xl text-gray-500 lg:absolute top-6 cursor-pointer right-80"></i>
+          <div class="text-nowrap hidden cursor-pointer lg:flex items-center justify-between border border-gray-400 px-5 h-12 rounded-full text-gray-600"><p>Contact me</p><i class="ri-arrow-right-up-long-line text-2xl"></i></div>
+      </nav>
+      <div id="overly" class="backdrop-blur-sm md:hidden transition-opacity duration-300 z-40 hidden fixed bg-black/10 inset-0"></div>
+      <i id="OpenAsideBar" class="ri-menu-line fixed text-gray-600 transition-all duration-300 ease-in-out active:scale-95 md:hidden right-10 top-5 cursor-pointer text-3xl"></i>
+      <aside id="asideBar" class="bg-blue-400 text-white z-50 md:hidden fixed -right-96 h-dvh w-52 transition-all duration-300">
+        <i id="CloseAsideBar" class="ri-close-large-line text-white absolute md:hidden right-10 top-5 cursor-pointer text-3xl  transition-all duration-300 ease-in-out active:scale-95"></i>
+          <ul class="flex flex-col mt-14 px-5 space-y-8">
+            <li><a class="asideLink" href="#">Home</a></li>
+            <li><a class="asideLink" href="#">About me</a></li>
+            <li><a class="asideLink" href="#">My Work</a></li>
+            <li><a class="asideLink" href="#">Contact me</a></li>
+          </ul>
+      </aside>
+     </header>
+
+
+
+     <main>
+
+         <section class="flex flex-col items-center justify-center h-dvh px-10">
+                   <img class="w-32 bg-blue-300 rounded-full" src="assets/img/man-technologist.png" alt="">
+                   <div class="flex items-center justify-between gap-5">
+                      <p>Hi I'm Aymane</p> 
+                      <img class="w-7" src="assets/img/waving-hand_1f44b.png" alt="">
+                    </div> 
+                   <h1 class="text-center my-5 text-4xl md:text-5xl lg:text-6xl md:mx-10 lg:mx-60">A passionate frontend web developer from Morocco.</h1>
+                   <p class="text-center text-sm md:text-md mb-10 sm:mx-20 md:mx-32 lg:mx-60">I love building clean and interactive web experiences
+                   Currently, I’m studying software development and leveling 
+                   up my skills every day to become a highly creative problem-solver.</p>
+                   <div class="flex text-white flex-col items-center justify-between gap-5 md:flex-row">
+                    <button class="bg-gradient-to-t from-blue-500 to-blue-300 px-10 shadow-lg py-3 rounded-full">Contact me <i class="ri-arrow-right-line"></i></button>
+                    <button class="border border-gray-400 text-gray-500 px-10 py-3 shadow-lg rounded-full">my resume <i class="ri-download-2-line"></i></button>
+                   </div>
+         </section>
+
+
+
+     </main>
+
+
+
+    
+    
+   
+
+
+
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
