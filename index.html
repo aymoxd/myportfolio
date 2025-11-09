@@ -27,10 +27,10 @@
      <header class="relative">
       <nav class="navbar z-40 transition-all duration-500 flex fixed h-20 top-0 w-full items-center justify-between px-7 md:px-12 lg:px-24">
           <div class="font-semibold text-xl md:text-2xl">Aymane<span class="text-blue-500 text-3xl">.</span></div>
-          <ul class="bg-white/20 transition-all duration-500  navUl text-gray-900 border border-gray-400 backdrop-blur-lg  hidden md:flex w-[500px] px-10 py-3 rounded-full items-center justify-between">
+          <ul class="bg-white/20 transition-all duration-500  navUl text-gray-900 shadow-md backdrop-blur-lg  hidden md:flex w-[500px] px-10 py-3 rounded-full items-center justify-between">
             <li><a  href="#">Home</a></li>
-            <li><a  href="#">About me</a></li>
-            <li><a  href="#">My Work</a></li>
+            <li><a  href="#aboutme">About me</a></li>
+            <li><a  href="#mywork">My Work</a></li>
             <li><a  href="#">Contact me</a></li>
           </ul>
           <i class="ri-moon-fill hidden md:block text-3xl text-gray-500 lg:absolute top-6 cursor-pointer right-80"></i>
@@ -42,8 +42,8 @@
         <i id="CloseAsideBar" class="ri-close-large-line text-gray-500 absolute md:hidden right-10 top-5 cursor-pointer text-3xl  transition-all duration-300 ease-in-out active:scale-95"></i>
           <ul class="flex flex-col mt-14 px-5 space-y-8">
             <li><a class="asideLink" href="#">Home</a></li>
-            <li><a class="asideLink" href="#">About me</a></li>
-            <li><a class="asideLink" href="#">My Work</a></li>
+            <li><a class="asideLink" href="#aboutme">About me</a></li>
+            <li><a class="asideLink" href="#mywork">My Work</a></li>
             <li><a class="asideLink" href="#">Contact me</a></li>
           </ul>
       </aside>
@@ -71,20 +71,20 @@
 
    <!--____________________________about me section______________________________-->
 
-         <section class="relative py-5 pt-32 px-10 md:px-20">
+         <section id="aboutme" class="relative py-5 pt-32 px-10 md:px-20">
 
                 <h1 class="text-center absolute mb-52 top-10 left-1/2 -translate-x-1/2">Introduction </h1>
-                    
+                    <!--about text-->
                 <div class=" gap-10 flex flex-col h-full">
                       <div class="flex flex-col items-center justify-center">
-                    <p class="text-3xl mb-5">About me</p>
-                    <p class="text-sm md:text-base w-full md:w-[80%] text-center">Hi! I’m <strong class="text-blue-500">Aymane</strong>, a freelance frontend developer from Morocco.
+                    <p class="text-3xl text-gray-700 mb-5">About me</p>
+                    <p class="text-sm md:text-base w-full md:w-[80%] text-center text-gray-800">Hi! I’m <strong class="text-blue-500">Aymane</strong>, a freelance frontend developer from Morocco.
                   I craft responsive, modern websites using HTML, CSS, JavaScript, and Tailwind CSS.
                   I’m passionate, motivated, and focused on delivering high-quality solutions for my clients.
                   Let’s turn your ideas into functional and beautiful web experiences! 🚀
                     </p>
                       </div>
-
+                    <!--about text-->
 
                       <div class="flex flex-col gap-5 sm:flex-row">
 
@@ -106,15 +106,90 @@
                         <p class="text-sm">Built more than 5 project</p>
                       </div>
 
-
-
                       </div>
 
                 </div>
 
 
          </section>
+                   <!--end about section-->
 
+                   
+           <section id="mywork" class="pt-5 px-10 md:px-20 space-y-3">
+          <!--title of projects-->
+            <div class="text-gray-700 flex flex-col items-center " >
+                  <h1 class="text-2xl mb-3">My latest work</h1>
+                  <p class="text-center text-sm">A showcase of my most recent work, updated regularly.</p>
+            </div>
+          <!--my projects-->
+
+            <div class=" grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+               <!--cart-->
+                 <div class="bg-white group cursor-pointer border border-gray-300 rounded-xl">
+                  <div class=" overflow-hidden">
+                       <img class="w-full group-hover:scale-105 transition-all duration-300  rounded-t-xl sm:h-52 object-cover" src="assets/img/project_dashboard.png" alt="">
+                  </div>
+                  <div class="px-3 space-y-3 rounded-b-xl pb-3 mt-3">
+                       <div class="flex items-center justify-between">
+                       <h1 class="text-gray-800 text-lg">Dashboard</h1>
+                        <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">frontend</span>
+                       </div>
+                       <p class="text-sm text-gray-600">A simple and clean dashboard interface built using HTML, Tailwind CSS, and JavaScript</p>
+                       <div class="flex justify-between gap-3 text-white">
+                         <button class="bg-blue-500 w-full cursor-pointer px-4 py-1.5 rounded-full">Demo</button>
+                         <button class="bg-blue-500 w-full cursor-pointer px-4 py-1.5 rounded-full">Code</button>
+                       </div>
+                       
+                  </div>
+                   
+                 </div>
+
+                      <div class="bg-white group border cursor-pointer border-gray-300 rounded-xl">
+                  <div class=" overflow-hidden">
+                       <img class="w-full group-hover:scale-105 transition-all duration-300  rounded-t-xl sm:h-52 object-cover" src="assets/img/project_portproject.png" alt="">
+                  </div>
+                  <div class="px-3 space-y-3 rounded-b-xl pb-3 mt-3">
+                       <div class="flex items-center justify-between">
+                       <h1 class="text-gray-800 text-lg">Port project</h1>
+                        <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">frontend</span>
+                       </div>
+                       <p class="text-sm text-gray-600">A collection of my JavaScript projects focused on clean, functional logic without heavy styling.</p>
+                       <div class="flex justify-between gap-3 text-white">
+                         <button class="bg-blue-500 w-full cursor-pointer px-4 py-1.5 rounded-full">Demo</button>
+                         <button class="bg-blue-500 w-full cursor-pointer px-4 py-1.5 rounded-full">Code</button>
+                       </div>
+                       
+                  </div>
+                   
+                 </div>
+
+                      <div class="bg-white cursor-pointer group border border-gray-300 rounded-xl">
+                  <div class=" overflow-hidden">
+                       <img class="w-full group-hover:scale-105 transition-all duration-300  rounded-t-xl sm:h-52 object-cover" src="assets/img/project_quize.png" alt="">
+                  </div>
+                  <div class="px-3 space-y-3 rounded-b-xl pb-3 mt-3">
+                       <div class="flex items-center justify-between">
+                       <h1 class="text-gray-800 text-lg">Quiz App</h1>
+                        <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">frontend</span>
+                       </div>
+                       <p class="text-sm text-gray-600">a simple Dashboard UI created using html tailwind JavaScript.</p>
+                       <div class="flex justify-between gap-3 text-white">
+                         <button class="bg-blue-500 w-full cursor-pointer px-4 py-1.5 rounded-full">Demo</button>
+                         <button class="bg-blue-500 w-full cursor-pointer px-4 py-1.5 rounded-full">Code</button>
+                       </div>
+                       
+                  </div>
+                   
+                 </div>
+                  
+
+                           
+
+            </div>
+               
+
+                
+           </section>
 
 
      </main>

@@ -35,10 +35,10 @@ overly.addEventListener('click',()=>{
 
 window.addEventListener('scroll',()=>{
     if(scrollY > 50){
-       navUl.classList.remove('bg-white/20','border-gray-400','border','backdrop-blur-lg');
+       navUl.classList.remove('bg-white/20','shadow-md','backdrop-blur-lg');
        navbar.classList.add('bg-white/10','backdrop-blur-lg');
     }else{
-       navUl.classList.add('bg-white/20','border-gray-400','border','backdrop-blur-lg');
+       navUl.classList.add('bg-white/20','shadow-md','backdrop-blur-lg');
        navbar.classList.remove('bg-white/10','backdrop-blur-lg');
     }
 })
