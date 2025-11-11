@@ -5,7 +5,12 @@ const overly = document.getElementById('overly');
 const asideLink = document.querySelectorAll('.asideLink');
 const navUl = document.querySelector('.navUl');
 const navbar = document.querySelector('.navbar');
+const form = document.getElementById('contactForm');
+const darkMode = document.getElementById('darkMode');
 
+darkMode.addEventListener('click',()=>{
+    alert('the dark mode coming soon !');
+});
 
 
 asideLink.forEach((el)=>{
@@ -42,3 +47,29 @@ window.addEventListener('scroll',()=>{
        navbar.classList.remove('bg-white/10','backdrop-blur-lg');
     }
 })
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    sendMsg();
+});
+
+
+function sendMsg(){
+    const name = document.getElementById('name');
+    const email = document.getElementById('email')
+    const msg = document.getElementById('message');
+
+
+    if(name.value == "" || email.value == "" || msg.value == ""){
+        alert('fill the inputs to send the message !!');
+    }else{
+        emailjs.sendForm("service_p6srpke","template_50wdmrk",form)
+        .then(()=>{
+             alert('Message sent successfully!');
+            form.reset();
+        })
+        .catch(()=>{
+              alert('Error: ' + JSON.stringify(err));
+        });
+    }
+}
