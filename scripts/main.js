@@ -9,8 +9,10 @@ const form = document.getElementById('contactForm');
 const darkMode = document.getElementById('darkMode');
 
 darkMode.addEventListener('click',()=>{
-    alert('the dark mode coming soon !');
+        document.body.classList.toggle("dark");
+        document.documentElement.classList.toggle("dark");
 });
+
 
 
 asideLink.forEach((el)=>{
