@@ -6,7 +6,12 @@ const asideLink = document.querySelectorAll('.asideLink');
 const navUl = document.querySelector('.navUl');
 const navbar = document.querySelector('.navbar');
 const form = document.getElementById('contactForm');
-const darkMode = document.getElementById('darkMode');
+const  darkMode = document.getElementById('darkMode');
+const upbtn = document.getElementById('upbtn');
+
+
+
+
 
 darkMode.addEventListener('click',()=>{
         document.body.classList.toggle("dark");
@@ -47,8 +52,19 @@ window.addEventListener('scroll',()=>{
     }else{
        navUl.classList.add('bg-white/20','shadow-md','backdrop-blur-lg');
        navbar.classList.remove('bg-white/10','backdrop-blur-lg');
+
     }
 })
+
+window.addEventListener('scroll', () => {
+    if (scrollY > 100) {
+        upbtn.classList.replace('opacity-0', 'opacity-100');
+        upbtn.classList.remove('pointer-events-none');
+    } else {
+        upbtn.classList.replace('opacity-100', 'opacity-0');
+        upbtn.classList.add('pointer-events-none');
+    }
+});
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
