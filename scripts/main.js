@@ -57,10 +57,12 @@ window.addEventListener('scroll',()=>{
 })
 
 window.addEventListener('scroll', () => {
-    if (scrollY > 100) {
+    if (scrollY > 300) {
+        upbtn.classList.add('show');
         upbtn.classList.replace('opacity-0', 'opacity-100');
         upbtn.classList.remove('pointer-events-none');
     } else {
+        upbtn.classList.remove('show');
         upbtn.classList.replace('opacity-100', 'opacity-0');
         upbtn.classList.add('pointer-events-none');
     }
