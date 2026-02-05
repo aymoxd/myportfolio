@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./*.html"],
+  darkMode: 'class', // نقل خاصية المظهر الداكن
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'], // نقل الخط الخاص بك
+      },
+    },
   },
   plugins: [],
 }
