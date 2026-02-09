@@ -41,31 +41,40 @@
 
     <div class="max-w-screen-2xl mx-auto ">
 
-       <div id="upbtn" class=" bg-blue-600 opacity-0 z-50 pointer-events-none  fixed bottom-5 transition-all duration-500 h-10 w-10 right-5 dark:bg-rose-500  flex items-center justify-center shadow-md rounded-full"><i class="ri-arrow-up-line text-white text-lg"></i></div>
+    <!-- up button -->
+    <div id="upbtn" class=" bg-blue-600 opacity-0 z-50 pointer-events-none  fixed bottom-16 transition-all duration-500 h-10 w-10 right-5 dark:bg-rose-500  flex items-center justify-center shadow-md rounded-full"><i class="ri-arrow-up-line text-white text-lg"></i></div>
 
      <header class="relative">
       <nav data-aos="fade-up" data-aos-delay="500" class="navbar z-40 transition-all duration-500 flex fixed h-20 top-0 w-full items-center justify-between px-7 md:px-12 lg:px-24">
-          <div class="font-semibold text-xl md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></div>
+          <div class="font-semibold hidden md:block text-xl md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></div>
           <ul class="bg-white/20  dark:text-white text-sm transition-all duration-500  navUl text-gray-900 shadow-md backdrop-blur-lg  hidden md:flex w-[500px] px-10 py-3 rounded-full items-center justify-between">
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#">Home</a></li>
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#aboutme">About me</a></li>
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#mywork">My Work</a></li>
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#contactme">Contact me</a></li>
           </ul>
-          <i id="darkMode" class="ri-moon-fill  text-3xl text-gray-500 dark:text-white absolute top-5 cursor-pointer right-24 md:right-3 lg:right-80"></i>
+          <i id="darkMode" class="ri-moon-fill hidden md:block text-3xl text-gray-500 dark:text-white absolute top-5 cursor-pointer right-24 md:right-3 lg:right-80"></i>
           <a href="#contactme" class="text-nowrap hidden cursor-pointer md:flex items-center justify-between border border-gray-400 dark:border-gray-300 dark:text-gray-300 px-5 h-12 rounded-full text-gray-600"><p>Contact me</p><i class="ri-arrow-right-up-long-line text-2xl"></i></a>
       </nav>
-      <div id="overly" class="backdrop-blur-sm md:hidden transition-opacity duration-300 z-40 hidden fixed bg-black/10 inset-0"></div>
-      <i data-aos="fade-up" data-aos-delay="500"  id="OpenAsideBar" class="ri-menu-line fixed z-40 text-gray-600 dark:text-white transition-all duration-300 ease-in-out active:scale-95 md:hidden right-10 top-5 cursor-pointer text-3xl"></i>
-      <aside id="asideBar" class="bg-slate-100 dark:bg-slate-800 dark:text-white text-gray-600 z-50 md:hidden fixed -right-96 h-dvh w-52 transition-all duration-300">
-        <i id="CloseAsideBar" class="ri-close-large-line text-gray-500 dark:text-white absolute md:hidden right-10 top-5 cursor-pointer text-3xl  transition-all duration-300 ease-in-out active:scale-95"></i>
-          <ul class="flex flex-col mt-14 px-5 space-y-8">
-            <li><a class="asideLink" href="#">Home</a></li>
-            <li><a class="asideLink" href="#aboutme">About me</a></li>
-            <li><a class="asideLink" href="#mywork">My Work</a></li>
-            <li><a class="asideLink" href="#contactme">Contact me</a></li>
+
+      <div id="overly" class=" md:hidden transition-opacity duration-300 z-40 hidden fixed bg-black/30 inset-0"></div>
+ 
+      <aside id="asideBar" class="bottom-0 flex items-center justify-between h-16 shadow-lg bg-slate-100 dark:bg-slate-800 dark:text-white text-gray-600 z-50 md:hidden fixed  w-full transition-all duration-300 ">
+        <div class="font-semibold pl-5 text-lg md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></div>
+        <i id="OpenAsideBar" class="ri-apps-2-fill pr-5 z-40 text-gray-600 dark:text-white transition-all duration-300 ease-in-out active:scale-95 md:hidden cursor-pointer text-3xl"></i>
+        
+        <div class="links absolute z-50 gap-4  w-full h-0 opacity-0 pointer-events-none rounded-t-3xl transition-all duration-300 ease-out">
+            <i id="CloseAsideBar" class="ri-close-large-line hidden text-gray-500 dark:text-white absolute md:hidden right-5 bottom-44 cursor-pointer text-2xl  transition-all duration-300 ease-in-out active:scale-95"></i>
+            <ul class="grid rounded-t-3xl grid-cols-2 grid-rows-2 gap-3 bg-white h-60 p-10 transition-all duration-300 ease-out">
+            <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-home-3-line text-2xl"></i><a class="asideLink" href="#">Home</a></li>
+            <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-user-line text-2xl"></i><a class="asideLink" href="#aboutme">About me</a></li>
+            <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-code-line text-2xl"></i><a class="asideLink" href="#mywork">My Work</a></li>
+            <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-send-plane-2-line text-2xl"></i><a class="asideLink" href="#contactme">Contact me</a></li>
           </ul>
+        </div>
       </aside>
+
+
      </header>
 
 
@@ -163,77 +172,14 @@
             </div>
           <!--my projects-->
 
-            <div class=" grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-               <!--cart-->
-                 <div data-aos="zoom-in" data-aos-delay="400" class="bg-white dark:bg-gray-800 group p-2 cursor-pointer transition-all duration-300 hover:-translate-y-1 border border-gray-300 dark:border-gray-500 rounded-xl">
-                  <div class="bg-rose-400 rounded-xl overflow-hidden">
-                       <img class="w-full group-hover:scale-105 transition-all duration-300  rounded-t-xl sm:h-52 object-cover" src="assets/img/project_dashboard.webp" alt="" loading="lazy">
-                  </div>
-                  <div class="px-3 space-y-3 rounded-b-xl pb-3 mt-3">
-                       <div class="flex items-center justify-between">
-                       <h1 class="text-gray-800 dark:text-gray-200 text-lg">Dashboard</h1>
-                        <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">frontend</span>
-                       </div>
-                       <p class="text-sm text-gray-600 dark:text-gray-400 h-20">A simple and clean dashboard interface built using HTML, Tailwind CSS, and JavaScript</p>
-                       <div class="flex gap-3 text-white">
-                         <a href="https://aymoxd.github.io/dashboard/" href class="bg-gradient-to-t from-blue-500 to-blue-400 dark:bg-gradient-to-t dark:from-rose-700 dark:to-rose-600 flex items-center justify-center text-nowrap cursor-pointer px-3 py-1.5 rounded-xl w-full" target="_blank" rel="noopener noreferrer">Demo <i class="ri-arrow-right-up-line text-xl"></i></a>
-                         <a href="https://github.com/aymoxd/dashboard.git" class="bg-gray-800 hover:bg-black dark:hover:bg-white dark:hover:text-black transition-all duration-300 cursor-pointer flex items-center justify-center w-12 rounded-full" target="_blank" rel="noopener noreferrer"><i class="ri-github-line text-xl"></i></a>
-                       </div>
-                       
-                  </div>
-                   
-                 </div>
-
-                      <div data-aos="zoom-in" data-aos-delay="400" class="bg-white group p-2 dark:bg-gray-800 border cursor-pointer transition-all duration-300 hover:-translate-y-1 border-gray-300 dark:border-gray-500 rounded-xl">
-                  <div class="rounded-xl overflow-hidden">
-                       <img class="w-full group-hover:scale-105 transition-all duration-300  rounded-t-xl sm:h-52 object-cover" src="assets/img/project_portproject.webp" alt="" loading="lazy">
-                  </div>
-                  <div class="px-3 space-y-3 rounded-b-xl pb-3 mt-3">
-                       <div class="flex items-center justify-between">
-                       <h1 class="text-gray-800 dark:text-gray-200 text-lg">Port project</h1>
-                        <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">frontend</span>
-                       </div>
-                       <p class="text-sm text-gray-600 dark:text-gray-400 h-20">A collection of my JavaScript projects focused on clean, functional logic without heavy styling.</p>
-                      <div class="flex gap-3 text-white">
-                         <a href="https://aymoxd.github.io/portProject/" href class="bg-gradient-to-t from-blue-500 to-blue-400 dark:bg-gradient-to-t dark:from-rose-700 dark:to-rose-600  flex items-center justify-center text-nowrap cursor-pointer px-3 py-1.5 rounded-xl w-full" target="_blank" rel="noopener noreferrer">Demo <i class="ri-arrow-right-up-line text-xl"></i></a>
-                         <a href="https://github.com/aymoxd/portProject.git" class="bg-gray-800 hover:bg-black dark:hover:bg-white dark:hover:text-black transition-all duration-300 cursor-pointer flex items-center justify-center w-12 rounded-full" target="_blank" rel="noopener noreferrer"><i class="ri-github-line text-xl"></i></a>
-                       </div>
-                       
-                  </div>
-                   
-                 </div>
-
-                      <div data-aos="zoom-in" data-aos-delay="400" class="bg-white dark:bg-gray-800 cursor-pointer group p-2 border transition-all duration-300 hover:-translate-y-1 border-gray-300 dark:border-gray-500 rounded-xl">
-                  <div class=" rounded-xl overflow-hidden">
-                       <img class="w-full group-hover:scale-105 transition-all duration-300  rounded-t-xl sm:h-52 object-cover" src="assets/img/project_quize.webp" alt="" loading="lazy">
-                  </div>
-                  <div class="px-3 space-y-3 rounded-b-xl pb-3 mt-3">
-                       <div class="flex items-center justify-between">
-                       <h1 class="text-gray-800 dark:text-gray-200 text-lg">Quiz App</h1>
-                        <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">frontend</span>
-                       </div>
-                       <p class="text-sm text-gray-600 dark:text-gray-400 h-20">a simple quiz app UI created using html tailwind JavaScript.</p>
-                     <div class="flex gap-3 text-white">
-                         <a href="https://aymoxd.github.io/quiz/" href class="bg-gradient-to-t from-blue-500 to-blue-400 dark:bg-gradient-to-t dark:from-rose-700 dark:to-rose-600  flex items-center justify-center text-nowrap cursor-pointer px-3 py-1.5 rounded-xl w-full" target="_blank" rel="noopener noreferrer">Demo <i class="ri-arrow-right-up-line text-xl"></i></a>
-                         <a href="https://github.com/aymoxd/quiz.git" class="bg-gray-800 hover:bg-black dark:hover:bg-white dark:hover:text-black transition-all duration-300 cursor-pointer flex items-center justify-center w-12 rounded-full" target="_blank" rel="noopener noreferrer"><i class="ri-github-line text-xl "></i></a>
-                       </div>
-                       
-                  </div>
-                   
-                 </div>
-                  
-    
-                           
-
-            </div>
-
-            <div class=" w-full flex items-center justify-center"> 
-                  <button class="bg-gray-800 flex items-center transition-all duration-300 hover:bg-black justify-between gap-2 text-white px-10 py-4 my-10 rounded-full">Show more <i class="ri-arrow-right-long-line text-xl"></i></button>
-
-            </div>
-               
-                
+            <div id="project_area" class=" grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+             
+               <!-- her project generated by javascript -->
+                    
            </section>
+              <div class=" w-full flex items-center justify-center"> 
+                  <button class="bg-gray-800 flex items-center transition-all duration-300 hover:bg-black justify-between gap-2 text-white px-10 py-4 my-10 rounded-full">Show more <i class="ri-arrow-right-long-line text-xl"></i></button>
+            </div>
 
            <!--end project section-->
 
@@ -298,7 +244,7 @@
     <script>
        AOS.init();
    </script>
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
 <!--  node node_modules/tailwindcss/lib/cli.js -i ./style.css -o ./main.css --watch  -->
