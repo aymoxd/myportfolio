@@ -35,7 +35,7 @@
 <meta name="twitter:description" content="Aymane's Frontend Developer portfolio: Modern projects with HTML, CSS, JS, and Tailwind.">
 <meta name="twitter:image" content="assets/img/man-technologist.png">
 
-  <title>Aymane | Frontend Developer Portfolio - Modern Web Projects</title>
+  <title>Aymane | Web Developer Portfolio - Modern Web Projects</title>
   </head>
   <body class="font-poppins overflow-x-hidden" >
 
@@ -59,25 +59,25 @@
 
       <div id="overly" class=" md:hidden transition-opacity duration-300 z-40 hidden fixed bg-black/30 inset-0"></div>
  
-      <aside id="asideBar" class="bottom-0 flex items-center justify-between h-16 shadow-lg bg-slate-100 dark:bg-slate-800 dark:text-white text-gray-600 z-50 md:hidden fixed  w-full transition-all duration-300 ">
+      <aside id="asideBar" class="bottom-0 flex items-center justify-between h-16 shadow-lg bg-white/50 dark:bg-slate-800 dark:text-white text-gray-600 z-50 md:hidden fixed  w-full transition-all duration-300 ">
+
         <div class="font-semibold pl-5 text-lg md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></div>
-        <i id="OpenAsideBar" class="ri-apps-2-fill pr-5 z-40 text-gray-600 dark:text-white transition-all duration-300 ease-in-out active:scale-95 md:hidden cursor-pointer text-3xl"></i>
-        
-        <div class="links absolute z-50 gap-4  w-full h-0 opacity-0 pointer-events-none rounded-t-3xl transition-all duration-300 ease-out">
-            <i id="CloseAsideBar" class="ri-close-large-line hidden text-gray-500 dark:text-white absolute md:hidden right-5 bottom-44 cursor-pointer text-2xl  transition-all duration-300 ease-in-out active:scale-95"></i>
-            <ul class="grid rounded-t-3xl grid-cols-2 grid-rows-2 gap-3 bg-white h-60 p-10 transition-all duration-300 ease-out">
+        <div class="flex items-center h-full w-20 justify-between">
+         <i id="darkMode" class="ri-moon-fill  text-2xl text-gray-500 dark:text-white cursor-pointer"></i>
+         <i id="OpenAsideBar" class="ri-apps-2-fill pr-5  text-gray-600 dark:text-white transition-all duration-300 ease-in-out active:scale-95 md:hidden cursor-pointer text-2xl"></i>
+        </div>
+    
+            <ul class="links grid w-full absolute bottom-0 h-0 opacity-0 pointer-events-none rounded-t-3xl grid-cols-2 grid-rows-2 gap-3 bg-slate-100 dark:bg-slate-800 border-t border-gray-200 dark:border-blue-400 p-10 transition-all duration-300 ease-in-out">
             <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-home-3-line text-2xl"></i><a class="asideLink" href="#">Home</a></li>
             <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-user-line text-2xl"></i><a class="asideLink" href="#aboutme">About me</a></li>
             <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-code-line text-2xl"></i><a class="asideLink" href="#mywork">My Work</a></li>
             <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-send-plane-2-line text-2xl"></i><a class="asideLink" href="#contactme">Contact me</a></li>
-          </ul>
-        </div>
+            </ul>
+     
       </aside>
 
 
      </header>
-
-
 
      <main>
 
@@ -106,7 +106,7 @@
                 <div class=" gap-10 flex flex-col h-full">
                       <div data-aos="fade-up" data-aos-delay="300"   class="flex flex-col items-center justify-center">
                     <p class="text-3xl text-gray-700 dark:text-white mb-5">About me</p>
-                    <p class="text-sm md:text-base dark:text-white w-full md:w-[80%] text-center text-gray-800">Hi! I’m <strong class="text-blue-500 dark:text-rose-500">Aymane</strong>, a freelance frontend developer.
+                    <p class="text-sm dark:text-white w-full md:w-[80%] text-center text-gray-800 lg:px-40">Hi! I’m <strong class="text-blue-500 dark:text-rose-500">Aymane</strong>, a freelance frontend developer.
                   I craft responsive, modern websites using HTML, CSS, JavaScript, PHP, and Tailwind CSS.
                   I’m passionate, motivated, and focused on delivering high-quality solutions for my clients.
                   Let’s turn your ideas into functional and beautiful web experiences! 🚀
@@ -248,3 +248,4 @@
   </body>
 </html>
 <!--  node node_modules/tailwindcss/lib/cli.js -i ./style.css -o ./main.css --watch  -->
+  <!--   npx tailwindcss -i ./style.css -o ./main.css    -->
