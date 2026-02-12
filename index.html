@@ -37,36 +37,35 @@
 
   <title>Aymane | Web Developer Portfolio - Modern Web Projects</title>
   </head>
-  <body class="font-poppins overflow-x-hidden" >
+  <body class="font-poppins overflow-x-hidden dark:bg-gray-950" >
 
     <div class="max-w-screen-2xl mx-auto ">
 
     <!-- up button -->
-    <div id="upbtn" class=" bg-blue-600 opacity-0 z-50 pointer-events-none  fixed bottom-16 transition-all duration-500 h-10 w-10 right-5 dark:bg-rose-500  flex items-center justify-center shadow-md rounded-full"><i class="ri-arrow-up-line text-white text-lg"></i></div>
+    <div id="upbtn" class=" bg-blue-600 opacity-0 z-50 pointer-events-none  fixed bottom-16 transition-all duration-500 h-10 w-10 right-5 dark:bg-rose-500  flex items-center justify-center shadow-md rounded-full cursor-pointer"><i class="ri-arrow-up-line text-white text-lg"></i></div>
 
      <header class="relative">
-      <nav data-aos="fade-up" data-aos-delay="500" class="navbar z-40 transition-all duration-500 flex fixed h-20 top-0 w-full items-center justify-between px-7 md:px-12 lg:px-24">
-          <div class="font-semibold hidden md:block text-xl md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></div>
+      <nav data-aos="fade-up" data-aos-delay="500" class="navbar z-40 transition-all duration-500 fixed hidden md:flex h-20 top-0 w-full items-center justify-between px-7 md:px-12 lg:px-24">
+          <a href="#" class="font-semibold hidden md:block text-xl md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></a>
           <ul class="bg-white/20  dark:text-white text-sm transition-all duration-500  navUl text-gray-900 shadow-md backdrop-blur-lg  hidden md:flex w-[500px] px-10 py-3 rounded-full items-center justify-between">
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#">Home</a></li>
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#aboutme">About me</a></li>
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#mywork">My Work</a></li>
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#contactme">Contact me</a></li>
           </ul>
-          <i id="darkMode" class="ri-moon-fill hidden md:block text-3xl text-gray-500 dark:text-white absolute top-5 cursor-pointer right-24 md:right-3 lg:right-80"></i>
+          <i class="ri-moon-fill darkMode hidden md:block text-3xl text-gray-500 dark:text-white absolute top-5 cursor-pointer right-24 md:right-3 lg:right-80"></i>
           <a href="#contactme" class="text-nowrap hidden cursor-pointer md:flex items-center justify-between border border-gray-400 dark:border-gray-300 dark:text-gray-300 px-5 h-12 rounded-full text-gray-600"><p>Contact me</p><i class="ri-arrow-right-up-long-line text-2xl"></i></a>
       </nav>
 
       <div id="overly" class=" md:hidden transition-opacity duration-300 z-40 hidden fixed bg-black/30 inset-0"></div>
  
-      <aside id="asideBar" class="bottom-0 flex items-center justify-between h-16 shadow-lg bg-white/50 dark:bg-slate-800 dark:text-white text-gray-600 z-50 md:hidden fixed  w-full transition-all duration-300 ">
+      <aside id="asideBar" class="bottom-0 flex items-center backdrop-blur-md justify-between h-16 shadow-lg bg-white/50 dark:bg-slate-800 dark:text-white text-gray-600 z-50 md:hidden fixed  w-full transition-all duration-300 ">
 
-        <div class="font-semibold pl-5 text-lg md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></div>
+        <a href="#" class="font-semibold pl-5 text-lg md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></a>
         <div class="flex items-center h-full w-20 justify-between">
-         <i id="darkMode" class="ri-moon-fill  text-2xl text-gray-500 dark:text-white cursor-pointer"></i>
+          <i class="ri-moon-fill darkMode inline-block text-2xl text-gray-500 dark:text-white cursor-pointer transition-all duration-300 transform hover:rotate-45 active:scale-90"></i>
          <i id="OpenAsideBar" class="ri-apps-2-fill pr-5  text-gray-600 dark:text-white transition-all duration-300 ease-in-out active:scale-95 md:hidden cursor-pointer text-2xl"></i>
         </div>
-    
             <ul class="links grid w-full absolute bottom-0 h-0 opacity-0 pointer-events-none rounded-t-3xl grid-cols-2 grid-rows-2 gap-3 bg-slate-100 dark:bg-slate-800 border-t border-gray-200 dark:border-blue-400 p-10 transition-all duration-300 ease-in-out">
             <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-home-3-line text-2xl"></i><a class="asideLink" href="#">Home</a></li>
             <li class="flex flex-col items-center justify-center rounded-md text-sm"><i class="ri-user-line text-2xl"></i><a class="asideLink" href="#aboutme">About me</a></li>
@@ -193,16 +192,16 @@
                   <p class="text-center text-4xl">Get in touch</p>
             </div>
            
-             <form id="contactForm" action="" method="" class=" flex items-center justify-center h-full px-10">
+              <form id="contactForm" action="" method="" class=" flex items-center justify-center h-full px-10">
 
               <div class="flex flex-col w-full sm:w-[650px] space-y-5">
-                   <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-                <input name="from_name" id="name" class="w-full bg-white dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-400 dark:focus:ring-rose-500 focus:border-none dark:text-white" type="text" placeholder="Enter your name" required>
-                <input name="from_email" id="email" class="w-full bg-white dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-400 dark:focus:ring-rose-500 focus:border-none dark:text-white" type="email" placeholder="Enter your email" required>
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+              <input name="from_name" id="name" class="w-full bg-white dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-400 focus:border-none dark:text-white" type="text" placeholder="Enter your name" required>
+              <input name="from_email" id="email" class="w-full bg-white dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-400  focus:border-none dark:text-white" type="email" placeholder="Enter your email" required>
               </div>
-              <textarea name="message" id="message" class=" bg-white dark:bg-gray-800 outline-none border border-gray-300 transition-all duration-300 focus:ring-2 focus:ring-blue-400 dark:focus:ring-rose-500 focus:border-none dark:text-white py-5 pl-4 rounded-md h-52 sm:h-80 max-h-96 min-h-52" name="" id="" placeholder="Enter your message" required></textarea>
+              <textarea name="message" id="message" class=" bg-white dark:bg-gray-800 outline-none border border-gray-300 transition-all duration-300 focus:ring-2 focus:ring-blue-400 focus:border-none dark:text-white py-5 pl-4 rounded-md h-52 sm:h-80 max-h-96 min-h-52" name="" id="" placeholder="Enter your message" required></textarea>
               <div class=" w-full flex items-center justify-center"> 
-                  <button id="senbtn" type="submit" class="bg-gray-800 flex items-center transition-all duration-300 hover:bg-black justify-between gap-2 text-white px-10 py-4 rounded-full">submit now<i class="ri-arrow-right-long-line text-xl"></i></button>
+              <button id="senbtn" type="submit" class="bg-gray-800 flex items-center transition-all duration-300 hover:bg-black justify-between gap-2 text-white px-10 py-4 rounded-full">submit now<i class="ri-arrow-right-long-line text-xl"></i></button>
 
             </div>
 
@@ -212,6 +211,12 @@
 
            </section>
             
+           <!-- alert of form  -->
+            <div id="msg" class="fixed flex contrast-100 items-center justify-between bottom-14 z-50 right-0 opacity-0 pointer-events-none bg-green-400/50 backdrop-blur-md text-green-600 rounded-lg py-3 w-80 px-5 transition-all duration-300 ease-in-out">
+              <p id="msgContent"></p>
+            </div>
+           <!-- end alert of form  -->
+
 
 
 

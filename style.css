@@ -4,99 +4,11 @@
 
 
 
-*{
-   transition: background-color 0.35s ease, 
-              color 0.35s ease,
-              border-color 0.35s ease,
-              fill 0.35s ease,
-              stroke 0.35s ease;
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-body, body::before {
-  transition: background 0.5s ease, background-color 0.5s ease, background-image 0.5s ease;
-}
-
-body {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  background: white;
-  z-index: 1;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image:
-  
-    linear-gradient(to right, rgba(229, 231, 235, 0.8) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(229, 231, 235, 0.8) 1px, transparent 1px),
-    radial-gradient(circle 500px at 20% 20%, rgba(139, 92, 246, 0.3), transparent),
-    radial-gradient(circle 500px at 80% 80%, rgba(59, 130, 246, 0.3), transparent);
-
-  background-size:
-    48px 48px,
-    48px 48px,
-    100% 100%,
-    100% 100%;
-}
-
-
-
-body.dark {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  background: #0f111a; 
-  z-index: 1;
-}
-
-body.dark::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image:
-    
-    linear-gradient(to right, rgba(100, 100, 120, 0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(100, 100, 120, 0.2) 1px, transparent 1px),
-  
-    radial-gradient(circle 500px at 20% 20%, rgba(139, 92, 246, 0.15), transparent),
-    radial-gradient(circle 500px at 80% 80%, rgba(59, 130, 246, 0.15), transparent);
-
-  background-size:
-    48px 48px,
-    48px 48px,
-    100% 100%,
-    100% 100%;
 }
 
 #upbtn.show{
   opacity: 1;
   transform: translateY(-20px);
 }
-
-/*
-.fade_section{
-  animation: fadeUp 1s linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
-@keyframes fadeUp {
-  from{
-    opacity: 0;
-    transform:  translateY(40px) scale(0.5);
-  }
-  to{
-       opacity: 1;
-    transform:  translateY(0) scale(1);
-  }
-}
-  */

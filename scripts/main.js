@@ -6,10 +6,27 @@ const asideLink = document.querySelectorAll('.asideLink');
 const navUl = document.querySelector('.navUl');
 const navbar = document.querySelector('.navbar');
 const form = document.getElementById('contactForm');
-const  darkMode = document.getElementById('darkMode');
+const darkModeButtons = document.querySelectorAll('.darkMode');
 const upbtn = document.getElementById('upbtn');
 const links = document.querySelector('.links');
 const html = document.documentElement;
+const msg = document.getElementById('msg');
+const msgContent = document.getElementById('msgContent');
+const lightModeButtons = document.querySelectorAll('.lightMode');
+
+
+
+
+function formMsg(text){
+     msg.classList.remove('right-0', 'opacity-0', 'pointer-events-none');
+     msg.classList.add('right-10', 'opacity-100', 'pointer-events-auto');
+     msgContent.textContent = text;
+     setTimeout(()=>{
+     msg.classList.remove('right-10', 'opacity-100', 'pointer-events-auto');
+     msg.classList.add('right-0', 'opacity-0', 'pointer-events-none');
+     },3000);
+}
+
 
 upbtn.addEventListener('click', () => {
     window.scrollTo({
@@ -18,9 +35,32 @@ upbtn.addEventListener('click', () => {
     });
 });
 
-darkMode.addEventListener('click',()=>{
-        document.body.classList.toggle("dark");
+//dark mode in localstorage
+function updateIcons() {
+    darkModeButtons.forEach(btn => {
+        if (html.classList.contains('dark')) {
+            btn.classList.replace('ri-moon-fill', 'ri-sun-fill');
+        } else {
+            btn.classList.replace('ri-sun-fill', 'ri-moon-fill'); 
+        }
+    });
+}
+
+if (localStorage.getItem("theme") === 'dark') {
+    html.classList.add('dark');
+}
+updateIcons();
+darkModeButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
         html.classList.toggle("dark");
+    
+        if (html.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+        updateIcons();
+    });
 });
 
 function closeSidebar() {
@@ -41,28 +81,31 @@ overly.addEventListener('click',   closeSidebar   );
 
 
 // show the 
-window.addEventListener('scroll',()=>{
-    if(scrollY > 50){
-       navUl.classList.remove('bg-white/20','shadow-md','backdrop-blur-lg');
-       navbar.classList.add('bg-white/10','backdrop-blur-lg');
-    }else{
-       navUl.classList.add('bg-white/20','shadow-md','backdrop-blur-lg');
-       navbar.classList.remove('bg-white/10','backdrop-blur-lg');
-
-    }
-})
-
+let lastScroll = 0;
 window.addEventListener('scroll', () => {
-    if (scrollY > 300) {
-        upbtn.classList.add('show');
-        upbtn.classList.replace('opacity-0', 'opacity-100');
-        upbtn.classList.remove('pointer-events-none');
-    } else {
-        upbtn.classList.remove('show');
-        upbtn.classList.replace('opacity-100', 'opacity-0');
-        upbtn.classList.add('pointer-events-none');
-    }
+    lastScroll = window.scrollY;
+    requestAnimationFrame(() => {
+        if(lastScroll > 50){
+            navUl.classList.remove('bg-white/20','shadow-md','backdrop-blur-lg');
+            navbar.classList.add('bg-white/10','backdrop-blur-lg');
+        } else {
+            navUl.classList.add('bg-white/20','shadow-md','backdrop-blur-lg');
+            navbar.classList.remove('bg-white/10','backdrop-blur-lg');
+        }
+
+        // Up button
+        if(lastScroll > 300){
+            upbtn.classList.add('show');
+            upbtn.classList.replace('opacity-0','opacity-100');
+            upbtn.classList.remove('pointer-events-none');
+        } else {
+            upbtn.classList.remove('show');
+            upbtn.classList.replace('opacity-100','opacity-0');
+            upbtn.classList.add('pointer-events-none');
+        }
+    });
 });
+
 
 //send the info of the user via form to gmail
 form.addEventListener('submit',(e)=>{
@@ -80,11 +123,13 @@ function sendMsg(){
     }else{
         emailjs.sendForm("service_p6srpke","template_50wdmrk",form)
         .then(()=>{
-             alert('Message sent successfully!');
+          //   alert('Message sent successfully!');
+                  formMsg("Message sent successfully");
             form.reset();
         })
-        .catch(()=>{
-              alert('Error: ' + JSON.stringify(err));
+        .catch((err)=>{
+              //alert('Error: ' + JSON.stringify(err));
+              formMsg('Error: ' + JSON.stringify(err));
         });
     }
 }
