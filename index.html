@@ -45,7 +45,7 @@
     <div id="upbtn" class=" bg-blue-600 opacity-0 z-50 pointer-events-none  fixed bottom-16 transition-all duration-500 h-10 w-10 right-5 dark:bg-rose-500  flex items-center justify-center shadow-md rounded-full cursor-pointer"><i class="ri-arrow-up-line text-white text-lg"></i></div>
 
      <header class="relative">
-      <nav data-aos="fade-up" data-aos-delay="500" class="navbar z-40 transition-all duration-500 fixed hidden md:flex h-20 top-0 w-full items-center justify-between px-7 md:px-12 lg:px-24">
+      <nav class="navbar z-40 transition-all duration-500 fixed hidden md:flex h-20 top-0 w-full items-center justify-between px-7 md:px-12 lg:px-24">
           <a href="#" class="font-semibold hidden md:block text-xl md:text-2xl dark:text-white">Aymoxd<span class="text-blue-500 dark:text-rose-500 text-3xl">.</span></a>
           <ul class="bg-white/20  dark:text-white text-sm transition-all duration-500  navUl text-gray-900 shadow-md backdrop-blur-lg  hidden md:flex w-[500px] px-10 py-3 rounded-full items-center justify-between">
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#">Home</a></li>
@@ -53,7 +53,8 @@
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#mywork">My Work</a></li>
             <li class="transition-all duration-300 hover:text-blue-500 dark:hover:text-rose-500"><a  href="#contactme">Contact me</a></li>
           </ul>
-          <i class="ri-moon-fill darkMode hidden md:block text-3xl text-gray-500 dark:text-white absolute top-5 cursor-pointer right-24 md:right-3 lg:right-80"></i>
+
+          <i class="ri-moon-fill darkMode inline-block text-3xl text-gray-500 dark:text-white cursor-pointer transition-all duration-300 transform hover:rotate-45 active:scale-90"></i>
           <a href="#contactme" class="text-nowrap hidden cursor-pointer md:flex items-center justify-between border border-gray-400 dark:border-gray-300 dark:text-gray-300 px-5 h-12 rounded-full text-gray-600"><p>Contact me</p><i class="ri-arrow-right-up-long-line text-2xl"></i></a>
       </nav>
 
@@ -80,17 +81,18 @@
 
      <main>
 
-         <section data-aos="fade-up" data-aos-delay="500" class="fade_section flex flex-col items-center justify-center dark:text-white h-dvh px-10 md:space-y-7">
-                   <img data-aos="fade-up" data-aos-delay="600" class="w-32 bg-blue-300 dark:bg-rose-700 rounded-full" src="assets/img/man-technologist.webp" alt="">
-                   <div data-aos="fade-up" data-aos-delay="700" class="flex items-center justify-between gap-2">
+         <section class="fade_section flex flex-col items-center justify-center dark:text-white h-dvh px-10 md:space-y-7">
+          
+                   <img class="w-32 bg-blue-300 dark:bg-rose-700 rounded-full" src="assets/img/man-technologist.webp" alt="">
+                   <div d class="flex items-center justify-between gap-2">
                       <p>Hi I'm Aymane</p> 
                       <img id="hand" class="w-7" src="assets/img/waving-hand_1f44b.webp" alt="">
                     </div> 
-                   <h1 data-aos="fade-up" data-aos-delay="800" class="text-center my-3 text-4xl md:text-5xl lg:text-6xl md:mx-10 lg:mx-60">frontend web developer from Earth.</h1>
-                   <p data-aos="fade-up" data-aos-delay="900" class="text-center text-sm md:text-md mb-5 sm:mx-20 md:mx-32 lg:mx-60">I love building clean and interactive web experiences
+                   <h1  class="text-center my-3 text-4xl md:text-5xl lg:text-6xl md:mx-10 lg:mx-60">frontend web developer from Earth.</h1>
+                   <p  class="text-center text-sm md:text-md mb-5 sm:mx-20 md:mx-32 lg:mx-60">I love building clean and interactive web experiences
                    Currently, I’m studying software development and leveling 
                    up <span class="hidden sm:inline">my skills every day to become a highly creative problem-solver.</span></p>
-                   <div data-aos="fade-up" data-aos-once="true" data-aos-delay="1000" class="flex text-white flex-col items-center justify-between gap-5 md:flex-row">
+                   <div  class="flex text-white flex-col items-center justify-between gap-5 md:flex-row">
                     <a href="mailto:aymanework2@gmail.com" class="bg-gradient-to-t from-blue-500 transition-all duration-300 active:scale-95 dark:bg-gradient-to-t dark:from-rose-700  dark:to-rose-600  hover:shadow-[0_12px_30px_rgba(56,128,255,0.45)] dark:hover:hover:shadow-[0_12px_30px_rgba(244,63,94,0.45)]  to-blue-400 px-10 py-3 rounded-full">Contact me <i class="ri-arrow-right-line"></i></a>
                     <a href="#" title="resume coming soon" class="border  border-gray-400 text-gray-500 dark:text-white px-10 py-3 shadow-lg transition-all duration-300 active:scale-95 rounded-full">my resume <i class="ri-download-2-line"></i></a>
                    </div>
@@ -103,7 +105,7 @@
                 <h1  class="text-center absolute mb-52 top-10 left-1/2 -translate-x-1/2">Introduction </h1>
                     <!--about text-->
                 <div class=" gap-10 flex flex-col h-full">
-                      <div data-aos="fade-up" data-aos-delay="300"   class="flex flex-col items-center justify-center">
+                      <div    class="flex flex-col items-center justify-center">
                     <p class="text-3xl text-gray-700 dark:text-white mb-5">About me</p>
                     <p class="text-sm dark:text-white w-full md:w-[80%] text-center text-gray-800 lg:px-40">Hi! I’m <strong class="text-blue-500 dark:text-rose-500">Aymane</strong>, a freelance frontend developer.
                   I craft responsive, modern websites using HTML, CSS, JavaScript, PHP, and Tailwind CSS.
@@ -165,7 +167,7 @@
                    
            <section id="mywork" class="mt-20 pt-5 px-10 md:px-20 space-y-5">
           <!--title of projects-->
-            <div data-aos="fade-up" data-aos-delay="200" class="text-gray-700 dark:text-white flex flex-col items-center mb-10" >
+            <div class="text-gray-700 dark:text-white flex flex-col items-center mb-10" >
                   <h1 class="text-4xl mb-3 ">My latest work</h1>
                   <p class="text-center text-sm">A showcase of my most recent work, updated regularly.</p>
             </div>
@@ -185,7 +187,7 @@
 
            <!--start contact section-->
 
-           <section data-aos="zoom-in" data-aos-delay="400" id="contactme" class=" h-dvh mt-5">
+           <section id="contactme" class=" h-dvh mt-5">
 
              <div class="text-gray-700 dark:text-white flex flex-col items-center " >
                   <h1 class="text-base mb-3 ">Contact with me</h1>
@@ -196,10 +198,10 @@
 
               <div class="flex flex-col w-full sm:w-[650px] space-y-5">
               <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-              <input name="from_name" id="name" class="w-full bg-white dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-400 focus:border-none dark:text-white" type="text" placeholder="Enter your name" required>
-              <input name="from_email" id="email" class="w-full bg-white dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-400  focus:border-none dark:text-white" type="email" placeholder="Enter your email" required>
+              <input name="from_name" id="name" class=" w-full bg-neutral-100 dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-1 focus:ring-blue-400 focus:border-none dark:text-white" type="text" placeholder="Enter your name" required>
+              <input name="from_email" id="email" class="w-full bg-neutral-100 dark:bg-gray-800 outline-none border border-gray-300 py-5 pl-4 rounded-md transition-all duration-300 focus:ring-1 focus:ring-blue-400  focus:border-none dark:text-white" type="email" placeholder="Enter your email" required>
               </div>
-              <textarea name="message" id="message" class=" bg-white dark:bg-gray-800 outline-none border border-gray-300 transition-all duration-300 focus:ring-2 focus:ring-blue-400 focus:border-none dark:text-white py-5 pl-4 rounded-md h-52 sm:h-80 max-h-96 min-h-52" name="" id="" placeholder="Enter your message" required></textarea>
+              <textarea name="message" id="message" class=" bg-neutral-100 dark:bg-gray-800 outline-none border border-gray-300 transition-all duration-300 focus:ring-1 focus:ring-blue-400 focus:border-none dark:text-white py-5 pl-4 rounded-md h-52 sm:h-80 max-h-96 min-h-52" name="" id="" placeholder="Enter your message" required></textarea>
               <div class=" w-full flex items-center justify-center"> 
               <button id="senbtn" type="submit" class="bg-gray-800 flex items-center transition-all duration-300 hover:bg-black justify-between gap-2 text-white px-10 py-4 rounded-full">submit now<i class="ri-arrow-right-long-line text-xl"></i></button>
 
@@ -212,9 +214,34 @@
            </section>
             
            <!-- alert of form  -->
-            <div id="msg" class="fixed flex contrast-100 items-center justify-between bottom-14 z-50 right-0 opacity-0 pointer-events-none bg-green-400/50 backdrop-blur-md text-green-600 rounded-lg py-3 w-80 px-5 transition-all duration-300 ease-in-out">
-              <p id="msgContent"></p>
-            </div>
+           <div id="msg"
+  class="fixed bottom-6 right-6 z-50
+         flex items-center gap-3
+         w-80 max-w-[90%]
+         px-4 py-3
+         rounded-xl
+         bg-green-50
+         border border-green-200
+         shadow-md
+         text-sm font-medium text-green-900
+         opacity-0 translate-y-4
+         pointer-events-none
+         transition-all duration-300 ease-out">
+
+  <div class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100">
+    <svg class="w-4 h-4 text-green-900"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+
+  <p id="msgContent" class="flex-1 leading-relaxed text-green-700">
+    Success message here
+  </p>
+</div>
+
            <!-- end alert of form  -->
 
 
@@ -244,11 +271,6 @@
      </div>
 
 
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-       AOS.init();
-   </script>
     <script type="module" src="scripts/main.js"></script>
   </body>
 </html>

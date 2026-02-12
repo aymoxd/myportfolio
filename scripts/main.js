@@ -10,23 +10,24 @@ const darkModeButtons = document.querySelectorAll('.darkMode');
 const upbtn = document.getElementById('upbtn');
 const links = document.querySelector('.links');
 const html = document.documentElement;
-const msg = document.getElementById('msg');
-const msgContent = document.getElementById('msgContent');
-const lightModeButtons = document.querySelectorAll('.lightMode');
 
 
 
 
 function formMsg(text){
-     msg.classList.remove('right-0', 'opacity-0', 'pointer-events-none');
-     msg.classList.add('right-10', 'opacity-100', 'pointer-events-auto');
-     msgContent.textContent = text;
-     setTimeout(()=>{
-     msg.classList.remove('right-10', 'opacity-100', 'pointer-events-auto');
-     msg.classList.add('right-0', 'opacity-0', 'pointer-events-none');
-     },3000);
-}
+  const msg = document.getElementById("msg");
+  const content = document.getElementById("msgContent");
 
+  content.textContent = text;
+
+  msg.classList.remove("opacity-0", "translate-y-4", "pointer-events-none");
+  msg.classList.add("opacity-100", "translate-y-0");
+
+  setTimeout(() => {
+    msg.classList.add("opacity-0", "translate-y-4", "pointer-events-none");
+    msg.classList.remove("opacity-100", "translate-y-0");
+  }, 3000);
+}
 
 upbtn.addEventListener('click', () => {
     window.scrollTo({
@@ -142,8 +143,6 @@ data.forEach((project) => {
   // الكارد الرئيسي
   const card = document.createElement('div');
   card.className = "bg-white dark:bg-gray-800 group p-2 cursor-pointer transition-all duration-300 hover:-translate-y-1 border border-gray-300 dark:border-gray-500 rounded-xl";
-  card.setAttribute('data-aos', 'zoom-in');
-  card.setAttribute('data-aos-delay', '400');
 
   // الصورة
   const imgContainer = document.createElement('div');
